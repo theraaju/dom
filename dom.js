@@ -41,3 +41,40 @@ var newvalue = document.querySelectorAll('.btn');
 newvalue[0].style.backgroundColor = "coral";
 
 
+//Traversing DOM
+ var itemlist = document.querySelector('#items');
+
+//  //Parent Node
+//  itemlist.parentNode.style.backgroundColor = 'Pink';
+
+// // parent element
+// itemlist.parentElement.style.backgroundColor = "pink"
+
+// // Child Node
+// itemlist.children[0].style.backgroundColor = "pink"
+
+//CreateElement
+
+//To create new div 
+var newdiv = document.createElement('div');
+
+//To add class
+newdiv.className = 'hello'
+
+//To add ID
+newdiv.id= 'helloid'
+//To add attributes
+newdiv.setAttribute('title','hello div');
+
+//To Create Text Node 
+
+var newDivText = document.createTextNode('LGG')
+
+//Add text To Div
+newdiv.appendChild(newDivText);
+
+
+//Add element in html dom
+var content = document.querySelector('header .container');
+var h1 = document.querySelector('header h1')
+content.insertBefore(newdiv,h1)
