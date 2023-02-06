@@ -1,14 +1,14 @@
 
 // console.log(document.); it will give the power to access elements even we can change the stuffs like below:
 
-document.title ="DOM"; //previous title was "Products Lister"
+document.title = "DOM"; //previous title was "Products Lister"
 
 
 // console.log(document.all); it will show us all the element of html
 
 // var headTitle = document.getElementById('header-title');
 // //header-title element stored inside variable headTitle
- 
+
 // headTitle.style.borderBottom ="solid white"; //borderBottom is a css property but here we need to use it differently we cannot use "border-bottom" istead we use borderBottom
 // headTitle.style.textAlign ="center"; 
 
@@ -20,9 +20,9 @@ items[2].style.backgroundColor = "yellow";
 items[3].style.backgroundColor = "aqua";
 
 var newitem = document.getElementsByClassName('new-item');
-newitem[0].style.backgroundColor="green";
-newitem[0].style.listStyle="none"
-newitem[0].style.padding="9px"
+newitem[0].style.backgroundColor = "green";
+newitem[0].style.listStyle = "none"
+newitem[0].style.padding = "9px"
 
 //getElementsByTagName
 
@@ -42,7 +42,7 @@ newvalue[0].style.backgroundColor = "coral";
 
 
 //Traversing DOM
- var itemlist = document.querySelector('#items');
+var itemlist = document.querySelector('#items');
 
 //  //Parent Node
 //  itemlist.parentNode.style.backgroundColor = 'Pink';
@@ -62,9 +62,9 @@ var newdiv = document.createElement('div');
 newdiv.className = 'hello'
 
 //To add ID
-newdiv.id= 'helloid'
+newdiv.id = 'helloid'
 //To add attributes
-newdiv.setAttribute('title','hello div');
+newdiv.setAttribute('title', 'hello div');
 
 //To Create Text Node 
 
@@ -74,7 +74,7 @@ var newDivText = document.createTextNode('LGG')
 newdiv.appendChild(newDivText);
 
 
-//Add element in html dom
+//Add element in html dom 
 var content = document.querySelector('header .container');
 var h1 = document.querySelector('header h1')
-content.insertBefore(newdiv,h1)
+content.insertBefore(newdiv, h1)
