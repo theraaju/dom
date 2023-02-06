@@ -14,7 +14,7 @@ document.title ="DOM"; //previous title was "Products Lister"
 
 var items = document.getElementsByClassName('list-group-item');
 
-items[0].style.backgroundColor = "gray";
+items[0].style.backgroundColor = "green";
 items[1].style.backgroundColor = "red";
 items[2].style.backgroundColor = "yellow";
 items[3].style.backgroundColor = "aqua";
