@@ -12,10 +12,23 @@ document.title ="DOM"; //previous title was "Products Lister"
 // headTitle.style.borderBottom ="solid white"; //borderBottom is a css property but here we need to use it differently we cannot use "border-bottom" istead we use borderBottom
 // headTitle.style.textAlign ="center"; 
 
+//styling using getElementsByClassName
 var items = document.getElementsByClassName('list-group-item');
-
 items[0].style.backgroundColor = "gray";
 items[1].style.backgroundColor = "red";
 items[2].style.backgroundColor = "yellow";
 items[3].style.backgroundColor = "aqua";
+
+var newitem = document.getElementsByClassName('new-item');
+newitem[0].style.backgroundColor="green";
+newitem[0].style.listStyle="none"
+newitem[0].style.padding="9px"
+
+//getElementsByTagName
+
+var itemz = document.getElementsByTagName('h1');
+itemz[0].style.textAlign = "center";
+
+
+
 
