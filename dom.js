@@ -29,6 +29,15 @@ newitem[0].style.padding="9px"
 var itemz = document.getElementsByTagName('h1');
 itemz[0].style.textAlign = "center";
 
+//QuerySelector
 
+var input = document.querySelector('input')
+
+input.value = "Fish"
+
+//QuerySelectorAll
+
+var newvalue = document.querySelectorAll('.btn');
+newvalue[0].style.backgroundColor = "coral";
 
 
